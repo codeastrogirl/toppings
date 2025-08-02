@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #4DE4D2;
+    --secondary-color: #F0F0F0;
+    --text-color: black;
+    --border-color: black;
+    --pizza-color: #FF7043;
+    --burger-color: #FFD54F;
+    --fries-color: #FFCA28;
+    --tacos-color: #FF7043;
+    --fried-chicken-color: #D84315;
+    --dumplings-color: #A1887F;
+    --noodles-color: #81D4FA;
+    --boba-tea-color: #CE93D8;
+    --end-note-color: #BDBDBD;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    margin: 10px;
+    background-color: lightblue;
+}
+
+img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+header h1 {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header p {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  
+        "a b c"
+        "d e f"
+        "g h h"
+        "i i i";
+    gap: 10px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.Pizza {
+    grid-area: a;
+    background-color: var(--pizza-color);
+}
+
+.Burgers {
+    grid-area: b;
+    background-color: var(--burger-color);
+}
+
+.Fries {
+    grid-area: c;
+    background-color: var(--fries-color);
+}
+
+.Tacos {
+    grid-area: d;
+    background-color: var(--tacos-color);
+}
+
+.FriedChicken {
+    grid-area: e;
+    background-color: var(--fried-chicken-color);
+}
+
+.Dumplings {
+    grid-area: f;
+    background-color: var(--dumplings-color);
+}
+
+.Noodles {
+    grid-area: g;
+    background-color: var(--noodles-color);
+}
+
+.BobaTea {
+    grid-area: h;
+    background-color: var(--boba-tea-color);
+}
+
+.EndNote {
+    grid-area: i;
+    background-color: var(--end-note-color);
+}
+
+.Pizza, .Burgers, .Fries, .Tacos, .FriedChicken, .Dumplings, .Noodles, .BobaTea, .EndNote {
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-top: 2px solid var(--border-color);
+}
